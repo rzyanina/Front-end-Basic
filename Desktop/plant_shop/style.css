@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    width: 83.333%;
+    margin: 0 auto;
+    height: 53px;
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(162, 160, 160);
+}
+.logo{
+    display: inline-block;
+    text-transform: uppercase;
+    color: #46A358;
+    font-weight: bold;
+}
+nav{
+    display: inline-block;
+    margin-left: 229px;
+    padding-top: 8px;
+    
+}
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 50px;
+    
+}
+nav a{
+    font-size: 16px;
+}
+
+  .menu button
+ {
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    background-color: #46A358;
+    color: white;
+    border-radius: 10px;
+    margin-left: 240px;
+    font-size: 16px;
+    font-weight: 500;
+   
+    
+   
+}
+.container{
+    width: 83.333%;
+    margin: 0 auto;
+    padding-top: 12px;
+    background-color: #f8f8f8;
+    margin-top: 12px;
+}
+.right_colom, .left_colom{
+    display: inline-block;
+    
+}
+.right_colom{
+    width: 42.25%;
+    position: relative;
+    background-color: #f8f8f8;
+    margin-left: 14px;
+}
+.left_colom{
+    width: 56%;
+   vertical-align: top;
+   padding-top: 68px;
+}
+
+.left_colom h3{
+    font-size: 14px;
+    padding-bottom: 7px;
+    margin-left: 43px;
+}
+.left_colom h1{
+    font-size: 70px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    margin-left: 40px;
+}
+.left_colom p{
+    font-size: 14px;
+    padding-bottom: 44px;
+    margin-left: 43px;
+}
+
+ image{
+    width: 100;
+ }
+ .right_colom .img_small{
+    width: 26.6%;
+    position: absolute;
+    bottom:8.333%;
+    left: 10.8%;
+
+} 
+.left_colom button{
+    font-size: 16px;
+    margin-bottom: 94px;
+    background-color: #46A358;
+    color: white;
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    margin-left: 41px;
+}  
