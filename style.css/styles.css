@@ -1,109 +1,161 @@
-* {
+@font-face {
+    font-family: "monserrat_black";
+    src: url(../fonts/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family: "monserrat_bold";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: "monserrat_light";
+    src: url(../fonts/Montserrat-Light.ttf);
+
+}
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:"monserrat_light";
 }
-.menu{
-    width: 83.333%;
+
+.conteinar {
+    width: 90%;
     margin: 0 auto;
-    height: 53px;
-    margin-top: 30px;
-    border-bottom: 1px solid rgb(162, 160, 160);
+    margin-top: 50px;
 }
-.logo{
+.left{
     display: inline-block;
-    text-transform: uppercase;
+     width: 20%;
+     vertical-align: top;
+        }
+   
+  
+.right{
+    display: inline-block;
+     width: 75%;
+    margin-left: 50px;
+    
+   
+
+}
+.Categories{
+    
+   height: 774px;
+   background-color: rgb(222, 222, 222);
+   
+    
+    
+}
+.left .Categories li{
+   list-style: none;
+   padding-left: 12px;
+   padding-top: 30px;
+   
+
+}
+#green{
     color: #46A358;
-    font-weight: bold;
-}
-nav{
-    display: inline-block;
-    margin-left: 229px;
-    padding-top: 8px;
-    
-}
-nav ul li {
-    display: inline-block;
-    text-decoration: none;
-    padding-left: 50px;
-    
-}
-nav a{
-    font-size: 16px;
+    ;
 }
 
-  .menu button
- {
+.sale-banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0ffe0;
+    margin-bottom: 20px;
+    margin-top: 280px;
+}
+.sale-banner h2 {
+    color: green;
+}
+.sale-banner img{
+    width: 100%;
+}
+.header{
+    margin-bottom: 31px;
+    
+}
+.header .menu{
     display: inline-block;
-    width: 100px;
-    height: 35px;
-    background-color: #46A358;
-    color: white;
-    border-radius: 10px;
-    margin-left: 234px;
-    font-size: 16px;
-    font-weight: 500;
+}
+ .header .menu_second{
+        display: inline-block;
+        margin-left: 300px;
+}
+.header li{
+    display: inline-block;
+    padding-right: 40px;
+    font-family: "monserrat_light";
+    
+}
+.header p{
+    display: inline-block;
+    
+    
+
+}
+.card img{
+    max-width: 100%;
+    height: auto;
+    
+}
+.conteinar_cards{
+    width: 100%;
+
+
+}
+.card{
+    display: inline-block;
+    width: 30%;
+    margin: 1%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 12px;
+    margin-bottom: 30px;
+    
+}
+.card_price{
+    background-color: white;
+}
+.card_price h3{
+font-family: Cera Pro;
+font-size: 16px;
+font-weight: 400;
+line-height: 16px;
+text-align: left;
+color: #3D3D3D;
+padding-top: 12px;
+font-family: "monserrat_bold";
+}
+.card_price p{
+font-family: Cera Pro;
+font-size: 18px;
+font-weight: 700;
+line-height: 16px;
+text-align: left;
+color: #46A358;
+padding-top: 6px
+;
+
+}
+.Sale h1{
+      text-align: center;
+      
+}
+.Sale h2{
+    padding-bottom: 12px;
+    text-align: center;
    
-    
-   
 }
-.container{
-    width: 83.333%;
-    margin: 0 auto;
-    padding-top: 12px;
-    background-color: #f8f8f8;
-    margin-top: 12px;
+.Sale img{
+    display: block;
 }
-.right_colom, .left_colom{
-    display: inline-block;
-    
+.card .card_img{
+    border: 1px solid rgb(182, 181, 181);
+ 
 }
-.right_colom{
-    width: 42.25%;
-    position: relative;
-    background-color: #f8f8f8;
-    margin-left: 14px;
+#all_plants{
+color: #46A358;
+text-decoration: underline;
 }
-.left_colom{
-    width: 56%;
-   vertical-align: top;
-   padding-top: 68px;
-}
-
-.left_colom h3{
-    font-size: 14px;
-    padding-bottom: 7px;
-    margin-left: 43px;
-}
-.left_colom h1{
-    font-size: 70px;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-    margin-left: 40px;
-}
-.left_colom p{
-    font-size: 14px;
-    padding-bottom: 44px;
-    margin-left: 43px;
-}
-
- image{
-    width: 100;
- }
- .right_colom .img_small{
-    width: 26.6%;
-    position: absolute;
-    bottom:8.333%;
-    left: 10.8%;
-
-} 
-.left_colom button{
-    font-size: 16px;
-    margin-bottom: 94px;
-    background-color: #46A358;
-    color: white;
-    width: 140px;
-    height: 40px;
-    border-radius: 6px;
-    margin-left: 41px;
-}  
