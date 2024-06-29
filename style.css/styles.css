@@ -55,7 +55,7 @@ body {
     font-size: 18px;
     font-weight: 900;
    text-align: right;
-    padding-top: 9px;
+    padding-top: 19px;
    
 }
 .card p {
@@ -167,13 +167,13 @@ section p{
 
 .post-info h3 {    
     font-family:"monserrat_bold";
-    font-size: 18px;
+    font-size: 20px;
    
     
 }
 
 .post-info p {
-    font-size: 12px;
+    font-size: 14px;
     color: #727272;
     font-family: "monserrat-light";
 }
