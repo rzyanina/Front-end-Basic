@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Магазин комнатных растений</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link href='./styles/styles.css' rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -50,16 +50,38 @@
                     <p>$119.00</p></div>
                 </div>
                 <div class="product">
-                    <img src="./img/plant_2.png" alt="Angel Wing Begonia">
+                    <div class="green-bar"></div> 
+                    <img src="./img/plant_2.png" alt="Angel Wing Begonia" class="main-image">
                     <div class="info_plants">
-                    <h3>Angel Wing Begonia</h3>
-                    <p>$169.00</p></div>
+                        <h3>Angel Wing Begonia</h3>
+                        <p>$169.00</p>
+                    </div>
+                    <div class="mini-images">
+                        <div class="rectangle">
+                            <img src="./img/shopping.png" alt="Shopping">
+                        </div>
+                        <div class="rectangle">
+                            <img src="./img/heart.png" alt="Heart">
+                        </div>
+                        <div class="rectangle">
+                            <img src="./img/frame.png" alt="Frame">
+                        </div>
+                    </div>
                 </div>
                 <div class="product">
-                    <img src="./img/plant_3.png" alt="African Violet">
+                    <div class="image-container">
+                        <img src="./img/plant_3.png" alt="African Violet" class="plant-image">
+                        <div class="green-pic">
+                            <h3>13% OFF</h3>
+                        </div>
+                        <div class="old-price-overlay">$229.00</div> <!-- Додано цей рядок -->
+                    </div>
                     <h3>African Violet</h3>
-                    <p>$199.00</p>
+                    <p class="new-price">$199.00</p>
                 </div>
+                
+                
+                
                 <div class="product">
                     <img src="./img/plant_4.png" alt="Beach Spider Lily">
                     <h3>Beach Spider Lily</h3>
@@ -91,6 +113,7 @@
                     <p>$39.00</p>
                 </div>
             </div>
+            
             <div class="navigation">
                 <a href="#" class="page active">1</a>
                 <a href="#" class="page">2</a>

@@ -1,192 +1,311 @@
+@font-face {
+    font-family: "monserrat_black"; 
+    src: url(fonts/Montserrat-Black.ttf); 
+}
 
 @font-face {
-    font-family: "monserrat_black";
-    src: url(../fonts/Montserrat-Black.ttf);
+    font-family: "monserrat_bold"; 
+    src: url(fonts/Montserrat-Bold.ttf); 
 }
-@font-face {
-    font-family: "monserrat_bold";
-    src: url(../fonts/Montserrat-Bold.ttf);
-}
-@font-face {
-    font-family: "monserrat_light";
-    src: url(../fonts/Montserrat-Light.ttf);
 
+@font-face {
+    font-family: "monserrat_light"; 
+    src: url(fonts/Montserrat-Light.ttf); 
 }
+
+@font-face {
+    font-family: "cera_compact_pro";
+    src: url(fonts/CeraCompactPro-Light.ttf);
+}
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "monserrat_light";
-}
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: "monserrat_light"; }
 
 body {
-    background-color:white;
-}
+    background-color: white; 
 
 .container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
 }
 
 .sidebar {
-    width: 25%;
-    margin-top: 32px;
-    padding: 20px;
-    height: 1197px;
-    background-color:#FBFBFB;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 25%; 
+    margin-top: 32px; 
+    padding: 20px; 
+    height: 1197px; 
+    background-color: #FBFBFB; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .sidebar h2 {
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-family:"monserrat_black";
-    font-weight: 400;
+    margin-bottom: 20px; 
+    font-size: 15px; 
+    font-family: "monserrat_black"; 
 }
 
 .sidebar ul {
-    list-style-type: none;
+    list-style-type: none; 
 }
 
 .sidebar ul li {
-    margin-bottom:18px;
-    padding-left: 12px;
-
+    margin-bottom: 18px; 
+    padding-left: 12px; 
 }
 
 .sidebar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 15px;
-    font-weight: 400;
+    text-decoration: none; 
+    color: #333; 
+    font-size: 15px; 
 }
-#House_Plants{
-    color: #1e7a42;
-    font-weight: 700;
+
+#House_Plants {
+    color: #1e7a42; 
+    font-weight: 700; 
 }
 
 .sale-banner {
-    margin-top: 397px;
-    padding: 20px;
-    background-color: #d4f4dd;
-    text-align: center;
-    
+    margin-top: 397px; 
+    padding: 20px; 
+    background-color: #d4f4dd; 
+    text-align: center; 
 }
-.sale-banner img{
-        max-width: 100%;
-        height: auto;
-        background-color:#d4f4dd ;
+
+.sale-banner img {
+    max-width: 100%; 
+    height: auto; 
+    background-color: #d4f4dd; 
 }
- 
+
 .sale-banner h2 {
-    font-size: 24px;
-    color: #1e7a42;
+    font-size: 24px; 
+    color: #1e7a42; 
 }
 
 .sale-banner p {
-    font-size: 18px;
-    color: #1e7a42;
+    font-size: 18px; 
+    color: #1e7a42; 
 }
 
 .main-content {
-    width: 75%;
-    height: 1190px;
-    padding: 20px;
+    width: 75%; 
+    height: 1190px; 
+    padding: 20px; 
 }
 
 .filters {
-    display: flex;
-    justify-content:left;
-    align-items: center;
+    display: flex; 
+    justify-content: left; 
+    align-items: center; 
     margin-bottom: 30px;
-    
 }
 
 .filters a {
-    text-decoration: none;
-    color: #333;
-    font-size: 15px;
-    margin-right: 40px;
+    text-decoration: none; 
+    color: #333; 
+    font-size: 15px; 
+    margin-right: 40px; 
 }
 
 #active {
-    font-weight: bold;
+    font-weight: bold; 
     color: #1e7a42;
-   text-decoration: underline ;
+    text-decoration: underline; 
 }
 
 .sort-by {
-    display: flex;
-    align-items: center;
-    margin-left: 350px;
+    display: flex; 
+    align-items: center; 
+    margin-left: 350px; 
 }
 
 .sort-by label {
-    font-size: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-
+    font-size: 15px; 
+    margin: 0 10px; 
 }
 
 .sort-by select {
-    padding: 5px;
-    font-size: 15px;
-    border: none;
+    padding: 5px; 
+    font-size: 15px; 
+    border: none; 
 }
 
 .products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
 }
 
 .product {
-    background-color: white;
-    text-align:left;
-    margin-bottom: 50px;
+    background-color: white; 
+    text-align: left; 
+    margin-bottom: 50px; 
+    position: relative; 
+    overflow: hidden;
+}
+
+.product:hover img.main-image {
+    transform: translateY(1px); 
+}
+
+.product:hover .green-bar {
+    height: 1px; 
+    width: 265px; 
+    background-color: #46A358; 
+}
+
+.product .mini-images {
+  
+    position: absolute; 
+    bottom: 75px;
+    left: 50%; 
+    transform: translateX(-50%); 
+    padding: 5px; 
+    border-radius: 5px; }
+}
+
+.product:hover .mini-images {
+    display: flex; 
+    gap: 10px; }
+
+.rectangle {
+    width: 35px; 
+    height: 35px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 4px; 
+    opacity: 0; 
+    background-color: #fff; 
+}
+.rectangle img {
+    width: 20px; 
+    height: 20px; 
+    transition: transform 0.3s ease; 
+}
+
+.product:hover .rectangle {
+    opacity: 1; 
+}
+
+.rectangle img:hover {
+    transform: scale(1.2); 
 }
 
 .product img {
-    max-width: 100%;
-    height: auto;
-    background-color:#FBFBFB ;}
-   
-
-.product h3 {
-    margin: 15px 0;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: "monserrat_light";
+    max-width: 100%; 
+    height: auto; 
+    background-color: #FBFBFB;
 }
 
-.product p {
-    font-size: 18px;
-    color:#46A358;
-    font-family: "monserrat_bold";
+.image-container {
+    position: relative;}
+
+
+.green-pic {
+    position: absolute;
+    top: 14px; 
+    left: 10px; 
+    width: 80px; 
+    height: 29px; 
+    background-color: green; 
+    color: white;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
     
 }
 
+.image-container:hover .green-pic {
+    opacity: 1; 
+    
+}
+
+.old-price-overlay {  
+    position: absolute; 
+    bottom: -72px; 
+    left: 82px; 
+    font-family: "cera_compact_pro"; 
+    font-size: 18px; 
+    text-align: left; 
+    width: 66px; 
+    background: white; 
+    color: #A5A5A5; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+    padding: 0 4px; 
+    text-decoration: line-through; 
+}
+
+.image-container:hover .old-price-overlay { 
+    opacity: 1; 
+}
+
+h3 {
+    font-family: "cera_compact_pro"; 
+    font-size: 16px; 
+    font-weight: 500; 
+    text-align: left; 
+}
+
+.new-price {
+    font-family: "cera_compact_pro"; 
+    font-size: 18px; 
+    font-weight: 400; 
+    color: green; 
+}
+
+.old-price {
+    font-family: "cera_compact_pro"; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-decoration: line-through; 
+    color: #A5A5A5; 
+    background: #A5A5A5; 
+    
+}
+
+
+.product h3 {
+    margin: 15px 0; 
+    font-size: 16px; 
+    font-family: "monserrat_light"; 
+}
+
+.product p {
+    font-size: 18px; 
+    color: #46A358; 
+    font-family: "monserrat_bold"; 
+}
+
 .navigation {
-    display: flex;
-    justify-content: right;
-    margin-top: 20px;
+    display: flex; 
+    justify-content: right; 
+    margin-top: 20px; 
 }
 
 .navigation .page {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-   margin-bottom: 50px;
-   margin-right: 5px;
-    padding: 5px 10px;
-    border: 1px solid #ddd;
+    text-decoration: none; 
+    color: #333; 
+    font-size: 18px; 
+    margin-right: 5px; 
+    padding: 5px 10px; 
+    border: 1px solid #ddd; 
     border-radius: 5px;
 }
 
 .navigation .page.active,
 .navigation .page:hover {
-    background-color: #1e7a42;
-    color: #fff;
+    background-color: #1e7a42; 
+    color: #fff; 
 }
